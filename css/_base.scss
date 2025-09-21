@@ -1,0 +1,12 @@
+$mainColor: #000000;
+$whiteColor: #ffffff;
+$fontFamily: 'Poppins', sans-serif;
+$fontPhrase: 'Playfair Display', sans-serif;
+$fontAwards: 'Montserrat', sans-serif;
+
+@mixin tablet {
+    @media screen and (max-width: 60rem) {@content};
+}
+@mixin phone {
+    @media screen and (max-width: 48rem) {@content};
+}
