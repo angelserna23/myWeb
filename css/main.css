@@ -6,6 +6,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+.body__certifications {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ffffff 0%, #e6f4ff 20%, #b3d9ff 50%, #4d6d9a 80%, #000000 100%);
+}
+
 .body_workExperience {
   margin: 0;
   min-height: 100vh;
@@ -2392,6 +2398,84 @@
 }
 .main__education .education .education__diplome-carousel .next {
   right: 10px;
+}
+
+.main__certifications .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  box-sizing: border-box;
+}
+.main__certifications .cards .certification {
+  background-color: #fffaf0;
+  margin: 1rem 1rem;
+  border-radius: 18px;
+  padding: 2rem 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 13px;
+  transition: all 0.2s ease;
+  padding-top: 0.5rem;
+}
+.main__certifications .cards .certification .card__title {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.main__certifications .cards .certification .card__text {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.main__certifications .cards .certification .skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 1rem;
+}
+.main__certifications .cards .certification .skills .skills__text {
+  padding: 0.5rem 1rem;
+  border-radius: 18px;
+  background-color: #fff8ba;
+}
+.main__certifications .cards .certification .skills .different {
+  background-color: #a8d48b;
+}
+.main__certifications .cards .certification .skills .new {
+  background-color: #d4d4d4;
+}
+@media screen and (max-width: 48rem) {
+  .main__certifications .cards .certification .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.main__certifications .cards .certification:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #ffffff, rgb(247, 247, 247));
+  box-shadow: 0 12px 24px rgba(0, 51, 102, 0.25);
+}
+@media screen and (max-width: 60rem) {
+  .main__certifications .cards .certification {
+    padding: 0.5rem 0.5rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .main__certifications .cards .certification {
+    padding: 0.5rem 0.5rem;
+  }
+}
+@media screen and (max-width: 60rem) {
+  .main__certifications .cards {
+    display: block;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .main__certifications .cards {
+    display: block;
+  }
 }
 
 .main__services .services {
