@@ -312,15 +312,42 @@
 .header__home .header__info .header__info-img {
   width: 15%;
 }
+@media screen and (max-width: 60rem) {
+  .header__home .header__info .header__info-img {
+    width: 30%;
+  }
+}
 .header__home .header__info .header__more .header__title {
   margin: 0;
   font-size: 3rem;
+}
+@media screen and (max-width: 60rem) {
+  .header__home .header__info .header__more .header__title {
+    font-size: 2rem;
+  }
 }
 .header__home .header__info .header__more .header__text {
   margin: 0;
   margin-top: 0.5rem;
   font-size: 1rem;
   font-style: italic;
+}
+@media screen and (max-width: 60rem) {
+  .header__home .header__info .header__more .header__text {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .header__home .header__info .header__more .header__text {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .header__home .header__info {
+    width: auto;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+  }
 }
 .header__home .nav__index {
   display: flex;
@@ -346,6 +373,24 @@
 }
 .header__home .nav__index .nav__separate {
   margin: 0;
+}
+@media screen and (max-width: 60rem) {
+  .header__home .nav__index .nav__separate {
+    font-size: 0rem;
+  }
+}
+@media screen and (max-width: 60rem) {
+  .header__home .nav__index {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .header__home {
+    display: block;
+  }
 }
 
 /*Frases para la pagina web*/
@@ -433,6 +478,16 @@
   border-radius: 50%;
   border: 3px solid #003366;
 }
+@media screen and (max-width: 60rem) {
+  .main__home .presentation .presentation__img {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .main__home .presentation .presentation__img {
+    width: 60%;
+  }
+}
 .main__home .presentation .home__info {
   width: 30%;
 }
@@ -473,6 +528,12 @@
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+@media screen and (max-width: 48rem) {
+  .main__home .presentation .home__info .home__buttons .home__button-education {
+    font-size: 0.8rem;
+    padding: 2.5rem 1rem;
+  }
+}
 .main__home .presentation .home__info .home__buttons .home__button-awards {
   color: #000000;
   text-decoration: none;
@@ -488,6 +549,12 @@
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+@media screen and (max-width: 48rem) {
+  .main__home .presentation .home__info .home__buttons .home__button-awards {
+    font-size: 0.8rem;
+    padding: 2.5rem 1.4rem;
+  }
+}
 .main__home .presentation .home__info .home__buttons .home__button-services {
   color: #000000;
   text-decoration: none;
@@ -502,6 +569,35 @@
   background-color: rgb(141, 178.5, 216);
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 48rem) {
+  .main__home .presentation .home__info .home__buttons .home__button-services {
+    font-size: 0.8rem;
+    padding: 2.5rem 1.3rem;
+  }
+}
+@media screen and (max-width: 60rem) {
+  .main__home .presentation .home__info {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .main__home .presentation .home__info {
+    width: auto;
+  }
+}
+@media screen and (max-width: 60rem) {
+  .main__home .presentation {
+    justify-content: space-around;
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .main__home .presentation {
+    display: block;
+    padding: 0 1rem;
+    text-align: center;
+  }
 }
 
 .main__terms .info .clausulas {

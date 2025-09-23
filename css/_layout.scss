@@ -379,12 +379,20 @@
 
         .header__info-img {
             width: 15%;
+
+            @include tablet {
+                width: 30%;
+            }
         }
 
         .header__more {
             .header__title {
                 margin: 0;
                 font-size: 3rem;
+
+                @include tablet {
+                    font-size: 2rem;
+                }
             }
 
             .header__text {
@@ -392,7 +400,20 @@
                 margin-top: .5rem;
                 font-size: 1rem;
                 font-style: italic;
+                
+                @include tablet {
+                    font-size: 1rem;
+                }
+                @include phone {
+                    font-size: .8rem;
+                }
             }
+        }
+
+        @include phone {
+            width: auto;
+            margin-bottom: 3rem;
+            padding-top: 2rem;
         }
     }
 
@@ -422,7 +443,24 @@
 
         .nav__separate{
             margin: 0;
+
+            @include tablet {
+                font-size: 0rem;
+            }
         }
+
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: .2rem;
+        }
+
+        
+    }
+
+    @include phone {
+        display: block;
     }
 }
 
@@ -508,11 +546,20 @@
         .presentation__img{
             width: 20%;
             border-radius: 50%;
-             border: 3px solid #003366;
+            border: 3px solid #003366;
+
+            @include tablet {
+                width: 40%;
+            }
+
+            @include phone {
+                width: 60%;
+            }
         }
 
         .home__info {
             width: 30%;
+
             .info__title {
                 font-size: 4rem;
                 margin: 0;
@@ -554,6 +601,11 @@
                         transform: translateY(-4px);
                         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
                     }
+
+                    @include phone {
+                        font-size: .8rem;
+                        padding: 2.5rem 1rem;
+                    }
                 }
 
                 .home__button-awards {
@@ -570,6 +622,11 @@
                         background-color: darken(#FFF2B2, 10%);
                         transform: translateY(-4px);
                         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                    }
+
+                    @include phone {
+                        font-size: .8rem;
+                        padding: 2.5rem 1.4rem;
                     }
                 }
 
@@ -588,8 +645,32 @@
                         transform: translateY(-4px);
                         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
                     }
+
+                    @include phone {
+                        font-size: .8rem;
+                        padding: 2.5rem 1.3rem;
+                    }
                 }
             }
+
+            @include tablet {
+                width: 50%;
+            }
+
+            @include phone {
+                width: auto;
+            }
+        }
+
+        @include tablet {
+            justify-content: space-around;
+            padding: 0 2rem;
+        }
+
+        @include phone {
+            display: block;
+            padding: 0 1rem;
+            text-align: center;
         }
     }
 }
