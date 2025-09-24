@@ -3353,7 +3353,7 @@
 }
 .footer .footer__info .mensaje {
   width: auto;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 .footer .footer__info .mensaje .mensaje__text {
   font-size: 2rem;
