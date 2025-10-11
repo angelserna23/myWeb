@@ -518,6 +518,7 @@
     @include phone {
         margin-bottom: .5rem;
         padding: 0 1rem;
+        background: linear-gradient(to right, #c9c9c9, #ffffff);
     }
 }
 
@@ -544,16 +545,17 @@
         margin-bottom: 3rem;
 
         .presentation__img{
-            width: 20%;
-            border-radius: 50%;
+            width: 15%;
+            height: 100%;
             border: 3px solid #003366;
+            border-radius: 50%;
 
             @include tablet {
-                width: 40%;
+                width: 30%;
             }
 
             @include phone {
-                width: 60%;
+                width: 40%;
             }
         }
 
