@@ -2034,6 +2034,9 @@
   transition: all 0.5s ease-in-out;
 }
 
+.main__education .education {
+  margin-top: 1rem;
+}
 .main__education .education .education__tsu {
   display: flex;
   justify-content: space-around;
