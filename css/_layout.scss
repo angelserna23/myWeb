@@ -2353,9 +2353,23 @@
                     text-align: center;
                     margin: 0;
                     margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 2px;
+                    justify-content: center;
+
+                    .education__tsu-flag-img {
+                        width: 6vw;
+                        margin-right: 4px;
+                    }
 
                     @include tablet {
                         font-size: 1.2rem;
+                    }
+
+                    @include phone {
+                        font-size: .9rem;
                     }
                 }
 
@@ -2510,13 +2524,28 @@
 
             .education__posgraduate-info {
                 width: 70%;
+
                 .education__posgraduate-title {
                     text-align: center;
                     margin: 0;
                     margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 2px;
+                    justify-content: center;
+
+                    .education__posgraduate-flag-img {
+                        width: 6vw;
+                        margin-right: 4px;
+                    }
 
                     @include tablet {
                         font-size: 1.2rem;
+                    }
+
+                    @include phone {
+                        font-size: .9rem;
                     }
                 }
 
@@ -2673,9 +2702,23 @@
                     text-align: center;
                     margin: 0;
                     margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 2px;
+                    justify-content: center;
+
+                    .education__engineering-flag-img {
+                        width: 6vw;
+                        margin-right: 4px;
+                    }
 
                     @include tablet {
                         font-size: 1.2rem;
+                    }
+
+                    @include phone {
+                        font-size: .9rem;
                     }
                 }
 
@@ -2834,9 +2877,23 @@
                     text-align: center;
                     margin: 0;
                     margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 2px;
+                    justify-content: center;
+
+                    .education__diplome-flag-img {
+                        width: 6vw;
+                        margin-right: 4px;
+                    }
 
                     @include tablet {
                         font-size: 1.2rem;
+                    }
+
+                    @include phone {
+                        font-size: .9rem;
                     }
                 }
 

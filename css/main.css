@@ -2061,10 +2061,24 @@
   text-align: center;
   margin: 0;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
+}
+.main__education .education .education__tsu .education__tsu-info .education__tsu-title .education__tsu-flag-img {
+  width: 6vw;
+  margin-right: 4px;
 }
 @media screen and (max-width: 60rem) {
   .main__education .education .education__tsu .education__tsu-info .education__tsu-title {
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .main__education .education .education__tsu .education__tsu-info .education__tsu-title {
+    font-size: 0.9rem;
   }
 }
 .main__education .education .education__tsu .education__tsu-info .education__tsu-subtitle {
@@ -2216,10 +2230,24 @@
   text-align: center;
   margin: 0;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
+}
+.main__education .education .education__posgraduate .education__posgraduate-info .education__posgraduate-title .education__posgraduate-flag-img {
+  width: 6vw;
+  margin-right: 4px;
 }
 @media screen and (max-width: 60rem) {
   .main__education .education .education__posgraduate .education__posgraduate-info .education__posgraduate-title {
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .main__education .education .education__posgraduate .education__posgraduate-info .education__posgraduate-title {
+    font-size: 0.9rem;
   }
 }
 .main__education .education .education__posgraduate .education__posgraduate-info .education__posgraduate-subtitle {
@@ -2368,10 +2396,24 @@
   text-align: center;
   margin: 0;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
+}
+.main__education .education .education__engineering .education__engineering-info .education__engineering-title .education__engineering-flag-img {
+  width: 6vw;
+  margin-right: 4px;
 }
 @media screen and (max-width: 60rem) {
   .main__education .education .education__engineering .education__engineering-info .education__engineering-title {
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .main__education .education .education__engineering .education__engineering-info .education__engineering-title {
+    font-size: 0.9rem;
   }
 }
 .main__education .education .education__engineering .education__engineering-info .education__engineering-subtitle {
@@ -2522,10 +2564,24 @@
   text-align: center;
   margin: 0;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
+}
+.main__education .education .education__diplome .education__diplome-info .education__diplome-title .education__diplome-flag-img {
+  width: 6vw;
+  margin-right: 4px;
 }
 @media screen and (max-width: 60rem) {
   .main__education .education .education__diplome .education__diplome-info .education__diplome-title {
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .main__education .education .education__diplome .education__diplome-info .education__diplome-title {
+    font-size: 0.9rem;
   }
 }
 .main__education .education .education__diplome .education__diplome-info .education__diplome-subtitle {
