@@ -3542,11 +3542,12 @@
   height: 27px;
 }
 .footer .socialMedia .socialMedia__contacto .socialMedia__telefono .socialMedia__telefono-link {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
   font-weight: 500;
   margin: 0;
   margin-top: 0.5rem;
+  cursor: pointer;
 }
 .footer .socialMedia .socialMedia__contacto .socialMedia__correo {
   display: flex;
