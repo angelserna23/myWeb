@@ -3549,6 +3549,14 @@
   margin-top: 0.5rem;
   cursor: pointer;
 }
+.footer .socialMedia .socialMedia__contacto .socialMedia__telefono .socialMedia__telefono-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
 .footer .socialMedia .socialMedia__contacto .socialMedia__correo {
   display: flex;
   flex-direction: column;
@@ -3560,6 +3568,14 @@
   height: 27px;
 }
 .footer .socialMedia .socialMedia__contacto .socialMedia__correo .socialMedia__correo-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.footer .socialMedia .socialMedia__contacto .socialMedia__correo .socialMedia__correo-link:visited {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
