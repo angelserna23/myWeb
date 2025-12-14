@@ -566,6 +566,28 @@
     padding: 2.5rem 1.4rem;
   }
 }
+.main__home .presentation .home__info .home__buttons .home__button-certifications {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #8F9EA1;
+  padding: 3rem 2rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  animation-delay: 0.4s;
+}
+.main__home .presentation .home__info .home__buttons .home__button-certifications:hover {
+  background-color: rgb(115.4466019417, 133.8689320388, 137.5533980583);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 48rem) {
+  .main__home .presentation .home__info .home__buttons .home__button-certifications {
+    font-size: 0.8rem;
+    padding: 2.5rem 1.4rem;
+  }
+}
 @media screen and (max-width: 60rem) {
   .main__home .presentation .home__info .home__buttons {
     padding: 0 3rem;

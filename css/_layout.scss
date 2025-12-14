@@ -648,6 +648,29 @@
                     }
                 }
 
+                .home__button-certifications {
+                    color: #ffffff;
+                    font-weight: 500;
+                    text-decoration: none;
+                    font-weight: 600;
+                    background-color: #8F9EA1;
+                    padding: 3rem 2rem;
+                    border-radius: 50%;
+                    transition: transform .3s ease;
+                    animation-delay: 0.4s;
+
+                    &:hover {
+                        background-color: darken(#8F9EA1, 10%);
+                        transform: translateY(-4px);
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                    }
+
+                    @include phone {
+                        font-size: .8rem;
+                        padding: 2.5rem 1.4rem;
+                    }
+                }
+
                 @include tablet {
                     padding: 0 3rem;
                 }
