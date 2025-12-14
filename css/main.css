@@ -577,7 +577,7 @@
 }
 @media screen and (max-width: 48rem) {
   .main__home .presentation .home__info .home__buttons .home__button-certifications {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     padding: 2.5rem 1.4rem;
   }
 }
