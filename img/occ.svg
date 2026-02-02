@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Círculo externo -->
+  <circle cx="256" cy="256" r="230" stroke="white" stroke-width="52" fill="none"></circle>
+  
+  <!-- Círculo medio -->
+  <circle cx="256" cy="256" r="150" stroke="white" stroke-width="52" fill="none"></circle>
+  
+  <!-- Círculo interno -->
+  <circle cx="256" cy="256" r="70" fill="white"></circle>
+
+  <!-- Flecha principal -->
+  <path d="M360 152 L472 40 L512 40 L512 80 L400 192 Z" fill="white"></path>
+
+  <!-- Cuerpo de la flecha -->
+  <path d="M340 172 L280 260 L252 248 L304 160 Z" fill="white"></path>
+</svg>
