@@ -1689,6 +1689,41 @@
         text-align: justify;
         width: 80%;
 
+        .flor_de_calvillo {
+            position: relative;
+            padding-top: 1.5rem;
+            margin-bottom: 2.5rem;
+
+            .experience__point {
+                position: absolute;
+                top: 154px;
+                left: -31px; // alineado con la línea
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #0004fe; // azul, por ejemplo
+                border: 3px solid #fff;    // borde para resaltar sobre la línea
+                box-shadow: 0 0 5px rgba(0,0,0,.2);
+
+                @include tablet {
+                    top: 149px;
+                }
+                @include phone {
+                    top: 96px;
+                }
+            }
+            .experience__logo {
+                width: 20%;
+
+                @include phone {
+                    width: 50%;
+                }
+            }
+            .experience__text {
+                margin: 0;
+            }
+        }
+
         .jatco {
             position: relative;
             padding-top: 1.5rem;
