@@ -277,3 +277,34 @@ if (btnCloseEight && closeEight && detailEight && openEight) {
 }
 
 /*---------------------------------------------------------------------------*/
+
+//Tarjeta 9
+const btnOpenNine  = document.querySelector(".card__9-more");
+const openNine     = document.querySelector(".card__9-more-img");
+const detailNine   = document.querySelector(".card__9-detail");
+const btnCloseNine = document.querySelector(".detail__9-return");
+const closeNine    = document.querySelector(".detail__9-return-img");
+
+if (btnOpenNine && openNine && detailNine) {
+  btnOpenNine.addEventListener("click", () => {
+    // Cerrar otras tarjetas primero
+    document.querySelectorAll("section[class^='card__'] [class*='-detail'].isOpen").forEach(d => {
+      if (d !== detailNine) d.classList.remove("isOpen");
+    });
+    document.querySelectorAll("section[class^='card__'] [class*='-more-img'].rotate").forEach(i => {
+      if (i !== openNine) i.classList.remove("rotate");
+    });
+
+    const isOpen = detailNine.classList.toggle("isOpen");
+    openNine.classList.toggle("rotate", isOpen);
+  });
+}
+
+if (btnCloseNine && closeNine && detailNine && openNine) {
+  btnCloseNine.addEventListener("click", () => {
+    detailNine.classList.remove("isOpen");
+    openNine.classList.remove("rotate");
+    closeNine.classList.add("collapse");
+    setTimeout(() => closeNine.classList.remove("collapse"), 400);
+  });
+}
