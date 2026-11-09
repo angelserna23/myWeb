@@ -1,5 +1,11 @@
 {
-  "dependencies": {
+  "name": "myweb",
+  "private": true,
+  "scripts": {
+    "build:css": "sass css/main.scss css/main.css --no-source-map --style=compressed",
+    "watch:css": "sass --watch css/main.scss css/main.css --no-source-map"
+  },
+  "devDependencies": {
     "sass": "^1.100.0"
   }
 }
