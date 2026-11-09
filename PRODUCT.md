@@ -55,7 +55,18 @@ Confirmed by Angel (also in CV):
 - 93% scrap reduction (BRP casting); 24% OEE improvement (Nissan CVT8); 98+ headcount positions optimized; 60% monthly workforce-efficiency improvement (JATCO/Nissan Japan project); JCP VBA tool removing 1,500+ man-hours/month; BIS VBA application for IE/OEE study traceability; led a 14-person cross-functional team across 3 facilities; built 3 KPI dashboards from scratch.
 - Awards: DX Competition FY23 2nd place (JCP), FY24 3rd place (BIS).
 - Flor de Calvillo (Nov 2025 – Mar 2026), fixed-term project.
-- ABC Autolíneas (Mar 2026 – present), General Supervisor, Preventive/Corrective Maintenance & Continuous Improvement. Not yet on the site.
+- ABC Autolíneas (Grupo Ximple), Arteaga, Coahuila (Mar 2026 – present), General Supervisor, Preventive/Corrective Maintenance & Continuous Improvement. ~250 tractor-trailer fleet, 3 shops (Arteaga, Nuevo Laredo, Reynosa). Not yet on the site. Source: Angel's results file (cut-off 2026-11-09). Publishable (company-level %, no amounts or unit IDs):
+  - Corrective days-in-shop 4.3 → 2.1 days (-51%, Jul → Oct 2026); Nov partial 1.7.
+  - Fleet availability 87.3% → 91.3% (Jul → Nov), ≈10 more trucks available per day.
+  - PM rescheduling 64% → 14% (Jun → Oct); weekly PM plan compliance 86% → 98–100%.
+  - Weekly release compliance 84% → >90% three months in a row.
+  - Corrective shop entries -19% (268 → 217/month, Jul → Oct).
+  - Built a web app with database replacing an Excel/VBA daily-status tracker (10,000+ historical records migrated); KPI tab, per-truck timeline, PM calendar, auto-generated PM email.
+  - Designed the area KPI system (availability ≥95%, repeat failures ≤3% within 3 weeks, release compliance ≥90%, days in shop <2, PM overdue ≤3%).
+  - Built the fleet technical master: 237 trucks × 25 technical fields, ~0% → 76% in one month, every value cross-checked against a verifiable source.
+  - Stack used: Python (pandas, openpyxl), HTML/CSS/JS, Chart.js, Excel/VBA, Power Query.
+  - Excluded from web (marked internal): Sinotruk failure analysis figures, critical-unit IDs, Jul–Aug management-report figures, tire budget, roadside-rescue numbers.
+  - Framing: present as continuous improvement and digitalization applied to fleet maintenance, not as a maintenance career.
 - Education: TSU Industrial Processes – Manufacturing (2018–2020); Postgraduate, Measurement, Quality and Industrial Automation, Université de Lille (2020–2021); B.Eng. Industrial Engineering (2021–2023); Full Stack Python diploma, EBAC (in progress).
 - Certifications: Yellow Belt (International Lean Six Sigma, 2025), White Belt (2024), Lean Productive Staff, 7 Statistical Tools, Core Tools (APQP, FMEA, SPC), Kaizen & problem solving (JATCO internal), VBA with distinction (Lille).
 - Real project photos and charts in img/ (OEE charts, headcount efficiency chart, casting, assembly, Flor de Calvillo).
