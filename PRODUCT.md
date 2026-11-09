@@ -40,7 +40,7 @@ Maintenance (current role) is not part of the headline; it appears factually in 
 - Full visual redesign approved (2026-11-09); the current look is evidence/anti-reference, content and functions are preserved.
 - Removed by decision (2026-11-09): freelance service sections, percentage skill bars, Facebook and Instagram links.
 - Kept: LinkedIn, email, phone, CV download, OCC CV link (pending confirmation).
-- Terminology: OEE (not "OOE"); MXN; man-hours/month.
+- Terminology: OEE = Overall Equipment Efficiency; OOE = Overall Operation Efficiency (operator/workforce efficiency, used at JATCO). Both are correct and distinct; MXN; man-hours/month.
 - Open: whether to keep the OCC CV link; consolidation of the three CV PDFs in assets/ into one current version.
 
 ## Brand Commitments
