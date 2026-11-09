@@ -36,7 +36,8 @@ Maintenance (current role) is not part of the headline; it appears factually in 
 
 ## Capabilities and Constraints
 
-- Bilingual: English default with a Spanish version (EN/ES switch). Decided 2026-11-09; implementation approach still open.
+- Bilingual: English default with a Spanish version (EN/ES switch), implemented client-side with JavaScript (single HTML per page, text dictionaries). Decided 2026-11-09. Trade-off accepted: Spanish text is weaker for search indexing.
+- Full visual redesign approved (2026-11-09); the current look is evidence/anti-reference, content and functions are preserved.
 - Removed by decision (2026-11-09): freelance service sections, percentage skill bars, Facebook and Instagram links.
 - Kept: LinkedIn, email, phone, CV download, OCC CV link (pending confirmation).
 - Terminology: OEE (not "OOE"); MXN; man-hours/month.
@@ -46,7 +47,11 @@ Maintenance (current role) is not part of the headline; it appears factually in 
 
 - Name: Ángel Andrés Hernández Serna (displayed as "Angel Serna").
 - Existing logo assets: img/logo__header_blanco.png, img/logo__footer.png.
-- Voice: direct, factual, numbers first; no inflated claims. English level B2 and French B2 are stated honestly, never overstated.
+- Voice: energetic and ambitious (forward-looking: where his career is heading), still factual and numbers-backed; no inflated claims. English level B2 and French B2 are stated honestly, never overstated.
+- What a recruiter must remember about Angel as a person (confirmed 2026-11-09): solves problems on the floor (gemba), a close team leader, fast growth (intern → Senior IE in under 3 years, DX awards).
+- Keep: AHS logo; formal portrait may stay but a new, less formal portrait is coming. Nothing else is untouchable.
+- Must not feel: too artistic (hard to scan) or flat/corporate-template. Primary action: Download CV.
+- Rejected 2026-11-09: two typographic directions (plant-floor wayfinding, A3 report sheet) as 'too AI-looking'; lesson: the page must be led by real photos of Angel, his team and his tools, not by document metaphors or illustrations.
 
 ## Evidence on Hand
 
@@ -54,7 +59,7 @@ Confirmed by Angel (also in CV):
 - JATCO México career: Quality Engineering Intern (Jul 2022) → Jr IE (Dec 2022) → Senior IE (Mar 2025), skipping the intermediate level.
 - 93% scrap reduction (BRP casting); 24% OEE improvement (Nissan CVT8); 98+ headcount positions optimized; 60% monthly workforce-efficiency improvement (JATCO/Nissan Japan project); JCP VBA tool removing 1,500+ man-hours/month; BIS VBA application for IE/OEE study traceability; led a 14-person cross-functional team across 3 facilities; built 3 KPI dashboards from scratch.
 - Awards: DX Competition FY23 2nd place (JCP), FY24 3rd place (BIS).
-- Flor de Calvillo (Nov 2025 – Mar 2026), fixed-term project.
+- Flor de Calvillo (Nov 2025 – Mar 2026), fixed-term project, new guava candy line. Confirmed by Angel 2026-11-09: −15 operators in total (5 per shift); capacity 69 → 103.5 pcs/h (+50%); OEE 90% achieved and sustained; adapted a bread-slicing machine so the candy, after passing through a tube that separates it, is cut into squares without sticking to the blade; automated packing/sealing; new packing layout. The infographic img/flor_de_calvillo_impact.png says 20 → 7 operators (−65%), which conflicts with −15: do not publish the 20 → 7 / −65% figures until reconciled. Do not reuse the infographic itself (illustrated, AI-looking).
 - ABC Autolíneas (Grupo Ximple), Arteaga, Coahuila (Mar 2026 – present), General Supervisor, Preventive/Corrective Maintenance & Continuous Improvement. ~250 tractor-trailer fleet, 3 shops (Arteaga, Nuevo Laredo, Reynosa). Not yet on the site. Source: Angel's results file (cut-off 2026-11-09). Publishable (company-level %, no amounts or unit IDs):
   - Corrective days-in-shop 4.3 → 2.1 days (-51%, Jul → Oct 2026); Nov partial 1.7.
   - Fleet availability 87.3% → 91.3% (Jul → Nov), ≈10 more trucks available per day.
@@ -75,6 +80,8 @@ Inconsistencies to resolve before publishing (do not invent values):
 - Home says "+20% OOE"; work experience and CV say +24% OEE.
 - Home says "-$140 MMXM" cost reduction: unit and source unconfirmed.
 - Work experience lists "+50% OOE" (Flor de Calvillo), "+30%" (JATCO UK & MX), "+15%", "+10%", "-200" and "-750 hrs/man month": confirm each before reuse.
+
+Real imagery on hand (low-res, 800px): Angel holding the JATCO DX Competition 3rd-place check (img/oee__2.jpeg), team photos at the JATCO México wall (img/ooe_2.jpeg, img/casting_2.jpeg, img/assembly_1.jpeg), real charts (img/headcount_efficiency_chart.png, img/oee_impact.png, img/impact__ooe.png). Coming from Angel: new portrait, original award photos, screenshots of his tools (VBA forms, maintenance web app, dashboards; sensitive data to be blurred). Most other images in img/ are generic illustrations/clip-art and stock logos: do not reuse them.
 
 Absent (must not be fabricated): testimonials, recommendation quotes, client logos, Green/Black Belt.
 
