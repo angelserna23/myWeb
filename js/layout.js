@@ -130,7 +130,18 @@ function projectCard(p, dim = false) {
   </a>`;
 }
 
+/* Always open pages at the top. Browsers restore the old scroll
+   position on reload / back; we turn that off, except for deep links
+   (#section or ?project=id), which scroll to their own target. */
+if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+function startAtTop() {
+  const deepLink = location.hash || new URLSearchParams(location.search).has("project");
+  if (!deepLink) window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+}
+window.addEventListener("pageshow", startAtTop);
+
 document.addEventListener("DOMContentLoaded", () => {
+  startAtTop();
   renderNav(document.body.dataset.page);
   renderFooter();
   setLang(initialLang());
