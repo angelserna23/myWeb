@@ -329,17 +329,35 @@ const EDUCATION = [
   }
 ];
 
+// group: "lean" | "lead" | "tools"   ·   img: certificate image in media/certs/ (null = no image yet)
+const CERT_GROUPS = [
+  ["lean", { en: "Lean & quality", es: "Lean y calidad" }],
+  ["lead", { en: "Leadership", es: "Liderazgo" }],
+  ["tools", { en: "Data & tools", es: "Datos y herramientas" }]
+];
+
 const CERTS = [
-  { name: "Lean Six Sigma Yellow Belt", by: "International Lean Six Sigma / Lean Academy", year: "2025", status: "done", skills: ["DMAIC", "Lean Six Sigma", "Process improvement"] },
-  { name: { en: "Full-Stack Developer with Python", es: "Desarrollador Full-Stack con Python" }, by: "EBAC Latam", year: "2026", status: "progress", skills: ["Python", "Web development", "Databases"] },
-  { name: { en: "Lean Manufacturing & Continuous Improvement", es: "Manufactura Esbelta y Mejora Continua" }, by: { en: "JATCO México · internal", es: "JATCO México · interna" }, year: "2025", status: "done", skills: ["Waste reduction", "Standardization"] },
-  { name: { en: "7 Quality Tools", es: "7 Herramientas de Calidad" }, by: { en: "JATCO México · internal", es: "JATCO México · interna" }, year: "2024", status: "done", skills: ["Pareto", "Control charts", "Root cause"] },
-  { name: "Core Tools", by: { en: "JATCO México · internal", es: "JATCO México · interna" }, year: "2024", status: "done", skills: ["APQP", "FMEA", "SPC"] },
-  { name: { en: "Kaizen & Problem Solving", es: "Kaizen y Solución de Problemas" }, by: { en: "JATCO México · internal", es: "JATCO México · interna" }, year: "2024", status: "done", skills: ["Kaizen events", "5 Whys", "Ishikawa", "PDCA"] },
-  { name: "Lean Six Sigma White Belt", by: "International Lean Six Sigma · SEDECYT Aguascalientes", year: "2024", status: "done", skills: ["Lean Six Sigma basics", "Teamwork"] },
-  { name: { en: "Process Analysis & Efficiency Improvement", es: "Análisis de Procesos y Mejora de Eficiencia" }, by: { en: "Nissan · academic collaboration", es: "Nissan · colaboración académica" }, year: "2023", status: "done", skills: ["Time & motion", "Process mapping", "Labor cost"] },
-  { name: "Lean Productive Staff", by: { en: "JATCO México · internal", es: "JATCO México · interna" }, year: "2023", status: "done", skills: ["Direct cost", "Total working time", "Budget"] },
-  { name: { en: "VBA, passed with distinction", es: "VBA, aprobado con distinción" }, by: "Université de Lille", year: "2021", status: "done", skills: ["VBA", "Excel automation"] }
+  { group: "lean", name: "Lean Six Sigma Yellow Belt", by: "International Lean Six Sigma", date: { en: "Sep 2025", es: "Sep 2025" }, status: "done", img: null, skills: ["DMAIC", "Lean Six Sigma", "Process improvement"] },
+  { group: "lean", name: "Lean Productive Staff", by: "JATCO México", date: { en: "Jul 2025", es: "Jul 2025" }, status: "done", img: null, skills: ["Direct cost", "Total working time", "Budget"] },
+  { group: "lean", name: "Automotive Core Tools", by: "JATCO México", date: { en: "Sep 2024", es: "Sep 2024" }, status: "done", img: null, skills: ["APQP", "FMEA", "SPC"] },
+  { group: "lean", name: "Lean Six Sigma White Belt", by: "International Lean Six Sigma", date: { en: "Jun 2024", es: "Jun 2024" }, status: "done", img: null, skills: ["Lean Six Sigma basics", "Teamwork"] },
+  { group: "lean", name: { en: "Lean Manufacturing & Continuous Improvement", es: "Manufactura Esbelta y Mejora Continua" }, by: { en: "JATCO México · internal", es: "JATCO México · interna" }, date: { en: "2025", es: "2025" }, status: "done", img: null, skills: ["Waste reduction", "Standardization"] },
+  { group: "lean", name: { en: "7 Quality Tools", es: "7 Herramientas de Calidad" }, by: { en: "JATCO México · internal", es: "JATCO México · interna" }, date: { en: "2024", es: "2024" }, status: "done", img: null, skills: ["Pareto", "Control charts", "Root cause"] },
+  { group: "lean", name: { en: "Kaizen & Problem Solving", es: "Kaizen y Solución de Problemas" }, by: { en: "JATCO México · internal", es: "JATCO México · interna" }, date: { en: "2024", es: "2024" }, status: "done", img: null, skills: ["Kaizen events", "5 Whys", "Ishikawa", "PDCA"] },
+  { group: "lead", name: { en: "Emotional Intelligence & Conflict Resolution", es: "Inteligencia Emocional y Resolución de Conflictos" }, by: "JATCO México", date: { en: "Jan 2024", es: "Ene 2024" }, status: "done", img: null,
+    text: { en: "Managing a team's emotions under pressure and resolving disagreements collaboratively, with empathy and care for people's wellbeing.", es: "Gestionar las emociones del equipo bajo presión y resolver desacuerdos de forma colaborativa, con empatía y cuidando el bienestar de las personas." },
+    skills: ["Conflict management", "Team climate"] },
+  { group: "lead", name: { en: "Talent Management & Coaching", es: "Gestión del Talento y Coaching" }, by: "JATCO México", date: { en: "Oct 2023", es: "Oct 2023" }, status: "done", img: null,
+    text: { en: "Coaching tools to find each person's strengths, help them reach their goals and align their growth with the company's objectives.", es: "Herramientas de coaching para identificar las fortalezas de cada persona, ayudarla a lograr sus metas y alinear su desarrollo con los objetivos de la empresa." },
+    skills: ["People development", "Coaching"] },
+  { group: "lead", name: { en: "Empathetic Leadership & Communication", es: "Liderazgo Empático y Comunicación" }, by: "JATCO México", date: { en: "Apr 2023", es: "Abr 2023" }, status: "done", img: null,
+    text: { en: "Closer, more effective leadership: active listening, constructive feedback and relationships built on mutual trust.", es: "Un liderazgo más cercano y efectivo: escucha activa, retroalimentación constructiva y relaciones basadas en la confianza mutua." },
+    skills: ["Team leadership", "Feedback"] },
+  { group: "lean", name: { en: "Process Analysis & Efficiency Improvement", es: "Análisis de Procesos y Mejora de Eficiencia" }, by: { en: "Nissan · academic collaboration", es: "Nissan · colaboración académica" }, date: { en: "2023", es: "2023" }, status: "done", img: null, skills: ["Time & motion", "Process mapping", "Labor cost"] },
+  { group: "tools", name: { en: "Full-Stack Developer with Python", es: "Desarrollador Full-Stack con Python" }, by: "EBAC Latam", date: { en: "2026", es: "2026" }, status: "progress", img: null, skills: ["Python", "Web development", "Databases"] },
+  { group: "tools", name: { en: "Big Data Visualization", es: "Visualizador de Big Data" }, by: { en: "Capacítate para el Empleo (Fundación Carlos Slim)", es: "Capacítate para el Empleo (Fundación Carlos Slim)" }, date: { en: "Sep 2022", es: "Sep 2022" }, status: "done", img: null, skills: ["Data visualization", "Dashboards"] },
+  { group: "tools", name: { en: "Project Formulation & Evaluation", es: "Formulación y Evaluación de Proyectos" }, by: { en: "Capacítate para el Empleo (Fundación Carlos Slim)", es: "Capacítate para el Empleo (Fundación Carlos Slim)" }, date: { en: "May 2022", es: "May 2022" }, status: "done", img: null, skills: ["Project evaluation", "Feasibility"] },
+  { group: "tools", name: { en: "VBA training certificate", es: "Certificado de formación en VBA" }, by: "Université de Lille", date: { en: "May 2021", es: "May 2021" }, status: "done", img: null, id: "0CSP5V05K06", skills: ["VBA", "Excel automation"] }
 ];
 
 const LANGUAGES = [

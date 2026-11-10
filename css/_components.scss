@@ -138,6 +138,12 @@
     border-color: var(--green);
     color: var(--on-green);
   }
+
+  small {
+    margin-left: 4px;
+    opacity: 0.6;
+    font-weight: 600;
+  }
 }
 
 .tag {

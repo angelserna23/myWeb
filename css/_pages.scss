@@ -760,6 +760,7 @@
 // Certifications
 // =============================================================
 .certs {
+  margin-top: 26px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   gap: 16px;
@@ -819,10 +820,46 @@
     line-height: 1.25;
   }
 
-  p {
+  &.is-hidden {
+    display: none;
+  }
+
+  &__img {
+    all: unset;
+    cursor: zoom-in;
+    display: block;
+    margin: -8px -8px 16px;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: var(--paper);
+    border: 1px solid var(--line);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: transform 0.5s var(--ease);
+    }
+    &:hover img {
+      transform: scale(1.04);
+    }
+    &:focus-visible {
+      outline: 3px solid var(--lime);
+    }
+  }
+
+  &__by {
     margin-top: 4px;
     font-size: 14.5px;
     color: var(--ink-2);
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
   }
 
   &__skills {
