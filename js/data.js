@@ -40,16 +40,17 @@ const PROJECTS = [
     ]
   },
   {
-    id: "segregation", stage: "jatco", company: "JATCO México", big: "+10%",
+    id: "segregation", stage: "jatco", company: "JATCO México", big: "≈23%",
     award: { en: "QC-STORY · 1ST", es: "QC-STORY · 1.º" },
-    title: { en: "Workforce efficiency by model", es: "Eficiencia de mano de obra por modelo" },
-    summary: { en: "A method to split OOE by model, so each model's labor cost matches the hours it really uses.", es: "Un método para separar el OOE por modelo, para que el costo de mano de obra de cada modelo refleje las horas que realmente usa." },
+    title: { en: "Direct labor cost by model", es: "Costo de mano de obra directa por modelo" },
+    summary: { en: "Direct labor cost re-allocated by model, ≈23% average correction worldwide: models that showed a per-unit loss moved to a positive margin.", es: "Costo de mano de obra directa reasignado por modelo, corrección promedio de ≈23% a nivel global: modelos que mostraban pérdida por unidad pasaron a margen positivo." },
     tags: ["Labor cost", "OOE", "Nissan"],
     where: { en: "Casting, Gears and Heat Treatment · Site 1", es: "Fundición, Engranes y Tratamiento Térmico · Planta 1" },
     contest: { en: "QC-Story Contest 2025 · 1st place", es: "Concurso QC-Story 2025 · 1.er lugar" },
     problem: { en: "Direct Labor Cost was calculated per model, but workforce efficiency was reported as one number for all of them. Models with different costs shared the same efficiency, some were penalized, and the plant lost money on wrong allocation.", es: "El Costo de Mano de Obra Directa se calculaba por modelo, pero la eficiencia se reportaba como un solo número para todos. Modelos con costos distintos compartían la misma eficiencia, algunos salían penalizados y la planta perdía dinero por una asignación incorrecta." },
     solution: { en: "Required hours calculated per model as the baseline, and actual worked hours distributed by real production. Cost per model now follows its own efficiency.", es: "Horas requeridas calculadas por modelo como base, y horas trabajadas reales distribuidas según la producción real. El costo por modelo ahora sigue su propia eficiencia." },
     role: { en: "I led it end to end: designed the required-vs-worked hours method, ran months of trials, built the impact and risk calculations, and implemented it.", es: "Lo lideré de principio a fin: diseñé el método de horas requeridas contra trabajadas, corrí meses de pruebas, construí los cálculos de impacto y riesgo, y lo implementé." },
+    extra: { en: "Direct labor cost per model corrected by ≈23% on average across global models (about 20% at the low end). Several models that showed a loss per unit in direct labor cost moved to a small positive margin. Plant workforce efficiency (OOE) improved about 10% across all models.", es: "Costo de mano de obra directa por modelo corregido en ≈23% en promedio en los modelos globales (alrededor de 20% en el extremo bajo). Varios modelos que mostraban pérdida por unidad en mano de obra directa pasaron a un margen positivo. La eficiencia de mano de obra de la planta (OOE) mejoró alrededor de 10% en todos los modelos." },
     images: [
       { src: "media/chart-segregation.webp", alt: { en: "Chart: plant efficiency over time, FY24–FY25", es: "Gráfica: eficiencia de planta en el tiempo, FY24–FY25" } },
       { src: "media/award-qc-segregation.webp", alt: { en: "Angel with the QC-Story team at JATCO México", es: "Angel con el equipo del QC-Story en JATCO México" } }
@@ -210,7 +211,7 @@ const STAGES = [
 ];
 
 const AWARDS = [
-  { place: { en: "1st", es: "1.º" }, contest: "QC-Story 2025", what: { en: "Workforce efficiency by model", es: "Eficiencia de mano de obra por modelo" }, img: "media/award-qc-segregation.webp", project: "segregation" },
+  { place: { en: "1st", es: "1.º" }, contest: "QC-Story 2025", what: { en: "Labor cost by model, ≈23% corrected", es: "Costo de mano de obra por modelo, ≈23% corregido" }, img: "media/award-qc-segregation.webp", project: "segregation" },
   { place: { en: "2nd", es: "2.º" }, contest: "DX Contest FY23", what: { en: "Automatic headcount calculator", es: "Calculadora automática de plantilla" }, img: "media/award-dx-calculator.webp", project: "calculator" },
   { place: { en: "3rd", es: "3.º" }, contest: "DX Contest FY24", what: { en: "Standard OEE analysis system", es: "Sistema estándar de análisis OEE" }, img: "media/award-dx-oee.webp", project: "oee" },
   { place: { en: "3rd", es: "3.º" }, contest: "QC-Story 2025", what: { en: "Scrap reduction, casting", es: "Reducción de scrap, fundición" }, img: "media/award-qc-scrap.webp", project: "scrap" },
