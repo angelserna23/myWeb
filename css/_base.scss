@@ -1,12 +1,110 @@
-$mainColor: #000000;
-$whiteColor: #ffffff;
-$fontFamily: 'Poppins', sans-serif;
-$fontPhrase: 'Playfair Display', sans-serif;
-$fontAwards: 'Montserrat', sans-serif;
+// =============================================================
+// Base: reset, typography, browser surfaces (selection, focus,
+// scrollbars) and the language switch helper.
+// =============================================================
+@use "tokens" as *;
 
-@mixin tablet {
-    @media screen and (max-width: 60rem) {@content};
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-@mixin phone {
-    @media screen and (max-width: 48rem) {@content};
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + 16px);
+}
+
+body {
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.55;
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+::selection {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+html {
+  scrollbar-color: var(--green) var(--paper);
+}
+
+.wrap {
+  width: min(1320px, 100% - 64px);
+  margin-inline: auto;
+
+  @media (max-width: $bp-tablet) {
+    width: calc(100% - 36px);
+  }
+}
+
+.display {
+  font-family: var(--display);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.85;
+  letter-spacing: -0.005em;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+// Bilingual blocks written directly in HTML (legal pages):
+// <div data-lang="en">…</div><div data-lang="es">…</div>
+html[lang="en"] [data-lang="es"],
+html[lang="es"] [data-lang="en"] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
 }

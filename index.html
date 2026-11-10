@@ -1,330 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lexend:wght@378&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lexend:wght@378&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>My web</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angel Serna · Senior Industrial Engineer &amp; Continuous Improvement Lead</title>
+  <meta name="description" content="Senior Industrial Engineer and Continuous Improvement Lead in Mexico. −93% scrap, 1,500+ man-hours a month removed with VBA tools, 5 improvement awards at JATCO México, fleet days-in-shop −51%.">
+  <link rel="canonical" href="https://angelserna23.github.io/myWeb/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Angel Serna · Senior Industrial Engineer & CI Lead">
+  <meta property="og:description" content="I go to the floor, work with the team and stay until the number moves. Then I build the tool that keeps it there.">
+  <meta property="og:url" content="https://angelserna23.github.io/myWeb/">
+  <meta property="og:image" content="https://angelserna23.github.io/myWeb/media/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0e5236">
+  <link rel="icon" type="image/png" href="media/favicon.png">
+  <link rel="preload" href="fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Ángel Andrés Hernández Serna","alternateName":"Angel Serna","jobTitle":"Senior Industrial Engineer & Continuous Improvement Lead","url":"https://angelserna23.github.io/myWeb/","sameAs":["https://www.linkedin.com/in/angel-andres-hernandez-serna-a6b91a273"],"address":{"@type":"PostalAddress","addressLocality":"Saltillo","addressRegion":"Coahuila","addressCountry":"MX"},"knowsLanguage":["es","en","fr"]}
+  </script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/layout.js" defer></script>
+  <script src="js/motion.js" defer></script>
+  <script src="js/home.js" defer></script>
 </head>
-<body class="body__home">
-    <header class="header__home">
-        <div class="header__info">
-            <img class="header__info-img" src="img/logo__header_blanco.png" alt="">
-            <div class="header__more">
-                <h1 class="header__title">Angel Serna</h1>
-                <p class="header__text">Industrial Engineering / 🚀 Full Stack Developer Python</p>
-            </div>
+<body data-page="home">
+  <header id="site-nav"></header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__mast">Angel<span>Serna</span></h1>
+          <p class="hero__role" data-i18n="role">Senior Industrial Engineer &amp; Continuous Improvement Lead</p>
+          <p class="hero__dek" data-i18n-html="dek"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="assets/CV_Angel_Serna1.6.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>
+              <span data-i18n="cv">Download CV</span>
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/angel-andres-hernandez-serna-a6b91a273" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <div class="hero__who">
+            <img src="media/portrait.webp" alt="" width="56" height="56">
+            <div><b>Ángel A. Hernández Serna</b><span data-i18n="who"></span></div>
+          </div>
         </div>
-        <nav class="nav__index">
-            <a class="nav__index-link" href="assets/CV_Angel_Serna1.6.pdf" target="_blank">Curriculum</a>
-            <p class="nav__separate">|</p>
-            <a class="nav__index-link" href="workExperience.html">Work Experience</a>
-        </nav>
-    </header>
-    <main class="main__home">
-        <article class="presentation">
-            <img class="presentation__img" src="img/foto de graduacion.jpeg" alt="">
-            <section class="home__info">
-                <h1 class="info__title">Hello!</h1>
-                <p class="info__text-me">A little bit of me:</p>
-                <p class="info__text">
-                    I’m Angel, an Industrial Engineer with hands-on experience 
-                    in manufacturing environments, focused on optimizing processes, 
-                    improving efficiency, and reducing operational waste. I am passionate 
-                    about continuous learning and applying both engineering and digital 
-                    tools to solve real-world problems.
-                </p>
-                <div class="home__buttons">
-                    <a class="home__button-education" href="education.html">Education</a>
-                    <a class="home__button-awards" href="awards.html">Awards</a>
-                    <a class="home__button-certifications" href="certifications.html">Certifi.</a>
-                </div>
-            </section>
-        </article>
-        <article class="services">
-            <h2 class="services__title">How I work</h2>
-            <p class="services__text">My professional approach to process optimization and continuous improvement</p>
-            <section class="industrial">
-                <div class="industrial__info">
-                    <h1 class="services__title"><img class="services__img" src="img/gear.svg" alt="">PROCESS & INDUSTRIAL <br> ENGINEERING</h1>
-                    <ul class="services__list">
-                        <li class="services__list-content">Capacity analysis of production lines.</li>
-                        <li class="services__list-content">Time studies for Head Count</li>
-                        <li class="services__list-content">Head Count necessity according to volume.</li>
-                        <li class="services__list-content">Determinate the DST (Design Standard Time).</li>
-                    </ul>
-                </div>
-                <img class="more__img" src="img/industrial_services.png" alt="">
-            </section>
-            <section class="training">
-                <div class="training__info">
-                    <h1 class="services__title"><img class="services__img" src="img/book-open.svg" alt="">Trainer</h1>
-                    <ul class="services__list">
-                        <li class="services__list-content">Training in Lean / Kaizen / Continuous Improvement</li>
-                        <li class="services__list-content">Advanced Excel & VBA tools training.</li>
-                        <li class="services__list-content">Workshops on data visualization and KPIs.</li>
-                    </ul>
-                </div>
-                <img class="more__img" src="img/trainer_service.png" alt="">
-            </section>
-            <section class="automation">
-                <div class="automation__info">
-                    <h1 class="services__title"><img class="services__img" src="img/tool.svg" alt="">AUTOMATION & DATA TOOLS</h1>
-                    <ul class="services__list">
-                        <li class="services__list-content">Develope of Visual Basic Excel programs.</li>
-                        <li class="services__list-content">Automated reports and forecast tools.</li>
-                        <li class="services__list-content">Automated dashboards to analyse the production line.</li>
-                        <li class="services__list-content">Automated 7 Stadistic tools to improve the accuracy of the data.</li>
-                        <li class="services__list-content">New request of formats according to your necessities.</li>
-                    </ul>
-                </div>
-                <img class="more__img" src="img/automation_services.png" alt="">
-            </section>
-            <section class="web">
-                <div class="web__info">
-                    <h1 class="services__title"><img class="services__img" src="img/code.svg" alt="">WEB DEVELOPMENT</h1>
-                    <ul class="services__list">
-                        <li class="services__list-content">Custom project-based websites</li>
-                        <li class="services__list-content">Personal / Portafolio websites</li>
-                        <li class="services__list-content">Tracking or E-commerce platforms</li>
-                    </ul>
-                </div>
-                <img class="more__img" src="img/web_services.png" alt="">
-            </section>
-        </article>
-        <article class="work">
-            <h1 class="work__title">WORK FLOW</h1>
-            <section class="process">
-                <div class="process__diagnostic">
-                    <img class="process__img" src="img/diganosis_services.png" alt="">
-                    <p class="process__text">Diagnosis</p>
-                </div>
-                <div class="process__proposal">
-                    <img class="process__img" src="img/proposal_service.png" alt="">
-                    <p class="process__text">Proposal</p>
-                </div>
-                <div class="process__implementation">
-                    <img class="process__img" src="img/implementation_service.png" alt="">
-                    <p class="process__text">Implementation</p>
-                </div>
-                <div class="process__follow">
-                    <img class="process__img" src="img/follow_service.png" alt="">
-                    <p class="process__text">Follow-Up</p>
-                </div>
-            </section>
-        </article>
-        <article class="results">
-            <h1 class="results__title">MEASURABLE IMPACT</h1>
-            <section class="data">
-                <div class="data__efficiency">
-                    <img class="data__img" src="img/efficiency_service.png" alt="">
-                    <div class="data__info">
-                        <p class="data__big-text">+%20 OOE</p>
-                        <p class="data__small-text">Increase Efficiency</p>
-                    </div>
-                </div>
-                <div class="data__cost">
-                    <img class="data__img" src="img/cost_service.png" alt="">
-                    <div class="data__info">
-                        <p class="data__big-text">-$140 MMXM</p>
-                        <p class="data__small-text">Cost Reduction</p>
-                    </div>
-                </div>
-                <div class="data__program">
-                    <img class="data__img" src="img/computer_service.png" alt="">
-                    <div class="data__info">
-                        <p class="data__big-text">5 +</p>
-                        <p class="data__small-text">Custo web projects delivered</p>
-                    </div>
-                </div>
-            </section>
-        </article>
-        <article class="skills">
-            <section class="hard__skills">
-                <h2 class="hard__title">Hard Skills</h2>
-                <h3 class="hard__explanation">Technical competencies developed through hands-on manufacturing projects, continuous improvement initiatives, and process optimization activities.</h3>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Time Studies & MODAPTS</p>
-                    <p class="info__percentage">90%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 90%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Lean Manufacturing & 5S</p>
-                    <p class="info__percentage">88%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 88%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Metrology Tools (Calipers, Micrometers, Gauges)</p>
-                    <p class="info__percentage">73%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 73%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Root Cause Analysis (5 Whys, Ishikawa, CAPA)</p>
-                    <p class="info__percentage">91%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 91%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Process Documentation</p>
-                    <p class="info__percentage">83%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 83%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Microsoft Excel (Automation & Reports)</p>
-                    <p class="info__percentage">88%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 88%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">AutoCAD</p>
-                    <p class="info__percentage">70%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 70%;"></div>
-                </div>
-            </section>
-            <section class="soft__skills">
-                <h2 class="soft__title">Soft Skills</h2>
-                <h3 class="soft__explanation">Professional skills strengthened through cross-functional collaboration, leadership in improvement projects, and work in high-performance manufacturing environments.</h3>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Problem-Solving & Critical Thinking</p>
-                    <p class="info__percentage">90%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 90%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Team Collaboration</p>
-                    <p class="info__percentage">88%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 88%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Communication Skills</p>
-                    <p class="info__percentage">85%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 85%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Adaptability & Learning Agility</p>
-                    <p class="info__percentage">92%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 92%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Time Management</p>
-                    <p class="info__percentage">87%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 87%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Attention to Detail</p>
-                    <p class="info__percentage">90%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 90%;"></div>
-                </div>
-                <!------------------------------>
-                <div class="info__skills">
-                    <p class="info__text">Continuous Improvement Mindset</p>
-                    <p class="info__percentage">95%</p>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__fill" style="width: 95%;"></div>
-                </div>
-            </section>
-        </article>
-        <p class="skills__description">Skill proficiency levels are based on professional experience, project implementation, and practical application in manufacturing environments.</p>
-    </main>
-    <footer class="footer">
-        <p class="separacion"></p>
-        <article class="socialMedia">
-            <section class="socialMedia__redes">
-                <img class="socialMedia__logo" src="img/logo__footer.png" alt="">
-                <div class="redes">
-                    <a class="redes__link" href="https://www.linkedin.com/in/angel-andres-hernandez-serna-a6b91a273" target="_blank"><img class="redes__logo-img" src="img/linkedin.svg" alt="LinkedIn"></a>
-                    <a class="redes__link" href="https://www.facebook.com/angelandres.hernandezserna" target="_blank"><img class="redes__logo-img" src="img/facebook.svg" alt="Facebook"></a>
-                    <a class="redes__link" href="https://www.instagram.com/huesos0.0/" target="_blank"><img class="redes__logo-img" src="img/instagram.svg" alt="Instagram"></a>
-                    <a class="redes__link" href="assets/CV_OCC_NEW.pdf" target="_blank"><img class="redes__logo-img redes__occ-img" src="img/occ.svg" alt="OCC"></a>
-                </div>
-                <p class="socialMedia__text">
-                    “As an Industrial Engineer, I strive to bridge process efficiency 
-                    with modern programming and technological solutions. My goal is to 
-                    integrate continuous improvement with digital innovation, making processes 
-                    simpler, smarter, and more sustainable for the future.”
-                </p>
-            </section>
-            <section class="socialMedia__interfaz">
-                <nav class="socialMedia__nav">
-                    <a class="socialMedia__nav-link" href="index.html">Home</a>
-                    <a class="socialMedia__nav-link" href="workExperience.html">Work Experience</a>
-                    <a class="socialMedia__nav-link" href="education.html">Education</a>
-                    <a class="socialMedia__nav-link" href="certifications.html">Certifications</a>
-                    <a class="socialMedia__nav-link" href="awards.html">Awards / Projects</a>
-                </nav>
-            </section>
-            <section class="socialMedia__contacto" id="final">
-                <p class="socialMedia__contacto-text">My Contact!</p>
-                <div class="socialMedia__horario">
-                    <img class="socialMedia__horario-img" src="img/clock.svg" alt="">
-                    <p class="socialMedia__horario-text">Monday to Friday de 07:00-18:00 hr<br>Saturday and Sundays from 08:00-13:00 hr</p>
-                </div>
-                <p class="socialMedia__contacto-mx">MX</p>
-                <div class="socialMedia__telefono">
-                    <img class="socialMedia__telefono-img" src="img/phone.svg" alt="">
-                    <a class="socialMedia__telefono-link" href="tel:+524491425727">+52 (449) 142 57 27</a>
-                </div>
-                <div class="socialMedia__correo">
-                    <img class="socialMedia__correo-img" src="img/mail.svg" alt="">
-                    <a 
-                        class="socialMedia__correo-link" 
-                        href="mailto:andres.hdzserna@gmail.com?subject=Job%20Opportunity">
-                            andres.hdzserna@gmail.com
-                    </a>
-                </div>
-            </section>
-        </article>
-        <article class="seguridad">
-            <nav class="seguridad__nav">
-                <p class="seguridad__nav-link">Copyright © 2025 Ángel Hernández Serna. All rights reserved.</p>
-                <a class="seguridad__nav-link" href="terms.html">Terms & Conditions</a>
-                <a class="seguridad__nav-link" href="privacy.html">Privacy Policy</a>
-            </nav>
-        </article>
-    </footer>
+
+        <div class="board is-playing" id="board">
+          <div class="board__head">
+            <h2 data-i18n="board">What moved, stage by stage</h2>
+            <button type="button" class="board__play" id="board-play" data-i18n-aria="pause"></button>
+          </div>
+          <div class="board__tabs" role="tablist" id="board-tabs" aria-label="Career stages"></div>
+          <div class="board__panel" id="board-panel" role="tabpanel" aria-live="polite"></div>
+          <div class="board__dots" id="board-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="projects">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <h2 data-i18n="home.projects">Projects</h2>
+            <p data-i18n="home.projects.sub"></p>
+          </div>
+          <div class="arrows">
+            <button type="button" id="proj-prev" aria-label="Previous"></button>
+            <button type="button" id="proj-next" aria-label="Next"></button>
+          </div>
+        </div>
+        <div class="chips" id="proj-filters"></div>
+        <div class="track" id="proj-track"></div>
+        <a class="link-more" href="awards.html"><span data-i18n="view.all">View all projects</span></a>
+      </div>
+    </section>
+
+    <section class="sec sec--white" id="awards">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <h2 data-i18n="awards.title">Five awards</h2>
+            <p data-i18n="awards.sub"></p>
+          </div>
+        </div>
+        <div class="awards" id="awards-grid"></div>
+      </div>
+    </section>
+
+    <section class="sec how">
+      <div class="wrap">
+        <div class="sec-head"><h2 data-i18n="how.title">How I work</h2></div>
+        <div class="how__grid">
+          <article><h3 data-i18n="how.1.t"></h3><p data-i18n="how.1.d"></p></article>
+          <article><h3 data-i18n="how.2.t"></h3><p data-i18n="how.2.d"></p></article>
+          <article><h3 data-i18n="how.3.t"></h3><p data-i18n="how.3.d"></p></article>
+          <article><h3 data-i18n="how.4.t"></h3><p data-i18n="how.4.d"></p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
 </body>
 </html>

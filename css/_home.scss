@@ -1,0 +1,527 @@
+// =============================================================
+// Home page
+// =============================================================
+@use "tokens" as *;
+
+.hero {
+  background: var(--green);
+  color: var(--on-green);
+  padding: 56px 0 72px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+    gap: 56px;
+    align-items: start;
+
+    > * {
+      min-width: 0;
+    }
+  }
+
+  &__mast {
+    font-family: var(--display);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(84px, 10.5vw, 164px);
+    line-height: 0.8;
+
+    span {
+      display: block;
+      color: var(--lime);
+    }
+  }
+
+  &__role {
+    margin-top: 28px;
+    font-stretch: 115%;
+    font-weight: 800;
+    font-size: clamp(18px, 1.6vw, 22px);
+    line-height: 1.25;
+    max-width: 26ch;
+  }
+
+  &__dek {
+    margin-top: 14px;
+    font-size: 18px;
+    color: var(--on-green-2);
+    max-width: 46ch;
+
+    strong {
+      color: var(--on-green);
+      font-weight: 700;
+    }
+  }
+
+  &__cta {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  &__who {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    color: var(--on-green-2);
+
+    img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 18%;
+      filter: grayscale(1);
+      border: 2px solid var(--lime);
+    }
+
+    b {
+      display: block;
+      color: var(--on-green);
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    padding: 36px 0 48px;
+
+    &__grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 36px;
+    }
+    &__mast {
+      font-size: clamp(76px, 24vw, 120px);
+    }
+  }
+}
+
+// ---------- Career board (signature interaction) ----------
+.board {
+  background: var(--green-2);
+  border: 1px solid var(--line-g);
+  border-radius: 22px;
+  padding: 22px 22px 24px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-stretch: 115%;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--on-green-2);
+    }
+  }
+
+  &__play {
+    all: unset;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1.5px solid var(--line-g);
+    transition: border-color 0.25s, background 0.25s;
+
+    &:hover {
+      border-color: var(--on-green);
+      background: rgba(255, 255, 255, 0.06);
+    }
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &__tabs {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  &__tab {
+    all: unset;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 12px 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    transition: background 0.3s var(--ease), transform 0.3s var(--ease);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.09);
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+    &:focus-visible {
+      outline: 3px solid var(--lime);
+      outline-offset: 2px;
+    }
+
+    b {
+      display: block;
+      font-stretch: 112%;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    small {
+      display: block;
+      margin-top: 2px;
+      font-size: 12.5px;
+      color: var(--on-green-2);
+    }
+
+    &[aria-selected="true"] {
+      background: var(--on-green);
+      color: var(--green);
+
+      small {
+        color: var(--green-3);
+      }
+      .board__bar {
+        background: rgba(14, 82, 54, 0.18);
+      }
+      .board__bar i {
+        background: var(--green);
+      }
+    }
+  }
+
+  &__bar {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 7px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.12);
+    overflow: hidden;
+
+    i {
+      position: absolute;
+      inset: 0;
+      background: var(--lime);
+      transform-origin: left;
+      transform: scaleX(0);
+    }
+  }
+
+  &.is-playing &__tab[aria-selected="true"] &__bar i {
+    animation: board-fill var(--board-dur, 7s) linear forwards;
+  }
+
+  &__panel {
+    margin-top: 20px;
+    min-height: 330px;
+    touch-action: pan-y;
+  }
+
+  &__fade {
+    transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
+  }
+  &__panel.is-swapping &__fade {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  &__title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 6px 16px;
+    flex-wrap: wrap;
+
+    h3 {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    span {
+      font-size: 14px;
+      color: var(--on-green-2);
+    }
+  }
+
+  &__role {
+    margin-top: 6px;
+    font-size: 15px;
+    color: var(--on-green-2);
+  }
+
+  &__metrics {
+    margin-top: 18px;
+    display: grid;
+    gap: 14px;
+  }
+
+  &__link {
+    margin-top: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+    font-stretch: 110%;
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--lime);
+    border-bottom: 1.5px solid transparent;
+    transition: border-color 0.25s, gap 0.3s var(--ease);
+
+    &:hover {
+      border-color: var(--lime);
+      gap: 12px;
+    }
+    svg {
+      width: 18px;
+      height: 18px;
+      flex: none;
+    }
+  }
+
+  &__dots {
+    display: none;
+  }
+
+  // On the dark board the bars use light colors.
+  .br {
+    color: var(--on-green-2);
+  }
+  .br__t {
+    background: rgba(255, 255, 255, 0.08);
+    i {
+      background: var(--on-green-2);
+    }
+  }
+  .br--after {
+    color: var(--on-green);
+    .br__t i {
+      background: var(--lime);
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    padding: 18px 16px 20px;
+
+    &__tabs {
+      grid-auto-flow: column;
+      grid-template-columns: none;
+      grid-auto-columns: minmax(150px, 1fr);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    &__title h3 {
+      font-size: 34px;
+    }
+    &__dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+
+      i {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--line-g);
+        transition: all 0.3s var(--ease);
+      }
+      i.is-on {
+        width: 22px;
+        border-radius: 7px;
+        background: var(--lime);
+      }
+    }
+  }
+}
+
+@keyframes board-fill {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.metric {
+  display: grid;
+  grid-template-columns: minmax(124px, auto) 1fr;
+  gap: 16px;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid var(--line-g);
+
+  &__v {
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 0.9;
+    color: var(--lime);
+    white-space: nowrap;
+  }
+
+  &__k {
+    font-weight: 700;
+    font-size: 15px;
+
+    small {
+      display: block;
+      font-weight: 400;
+      color: var(--on-green-2);
+      font-size: 13px;
+      margin-top: 1px;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: minmax(92px, auto) 1fr;
+    &__v {
+      font-size: 36px;
+    }
+  }
+}
+
+.link-more {
+  display: inline-flex;
+  margin-top: 10px;
+  font-weight: 800;
+  font-stretch: 110%;
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 2px solid var(--lime);
+  padding-bottom: 2px;
+  transition: color 0.25s, border-color 0.25s;
+
+  &:hover {
+    border-color: var(--green);
+  }
+}
+
+// ---------- Awards ----------
+.awards {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+
+  @media (max-width: 1100px) {
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    grid-auto-columns: minmax(240px, 70%);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 12px;
+  }
+}
+
+.award {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: var(--radius);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  padding-bottom: 18px;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.3s;
+
+  &__img {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--green-2);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease);
+    }
+  }
+
+  &__place {
+    margin: 16px 18px 0;
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 0.9;
+    color: var(--green);
+    text-transform: uppercase;
+
+    small {
+      font-size: 20px;
+    }
+  }
+
+  &__contest {
+    margin: 6px 18px 0;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green-3);
+  }
+
+  &__what {
+    margin: 4px 18px 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+    border-color: var(--green-3);
+  }
+  &:hover &__img img {
+    transform: scale(1.05);
+  }
+}
+
+// ---------- How I work ----------
+.how__grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: $bp-phone) {
+    grid-template-columns: 1fr;
+  }
+
+  article {
+    padding-top: 18px;
+    border-top: 3px solid var(--green);
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: var(--lime-2, #b9da3a);
+    }
+  }
+
+  h3 {
+    font-stretch: 112%;
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--green);
+  }
+
+  p {
+    margin-top: 8px;
+    color: var(--ink-2);
+    font-size: 15.5px;
+  }
+}

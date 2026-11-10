@@ -1,0 +1,57 @@
+// =============================================================
+// Design tokens: colors, type, spacing, motion.
+// Change a value here and it updates the whole site.
+// =============================================================
+
+@font-face {
+  font-family: "Shoulders";
+  src: url("../fonts/big-shoulders-display-latin-900-normal.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Shoulders";
+  src: url("../fonts/big-shoulders-display-latin-800-normal.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo-latin-wdth-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+}
+
+:root {
+  // Greens (identity) + lime (action / highlight)
+  --green: #0e5236;
+  --green-2: #0a3f29;
+  --green-3: #13663f;
+  --lime: #d4f25a;
+  --lime-hover: #e0fa6e;
+
+  // Light surfaces
+  --paper: #eef3ef;
+  --card: #ffffff;
+  --line: #e1e4de;
+  --chip: #e3ece5;
+  --ink: #0f1511;
+  --ink-2: #46514a;
+
+  // Text on green
+  --on-green: #eaf2ec;
+  --on-green-2: #b2dcbf;
+  --line-g: rgba(234, 242, 236, 0.22);
+
+  --display: "Shoulders", "Arial Narrow", sans-serif;
+  --body: "Archivo", system-ui, sans-serif;
+
+  --radius: 18px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow: 0 22px 40px -22px rgba(14, 82, 54, 0.45);
+  --nav-h: 68px;
+}
+
+$bp-tablet: 900px;
+$bp-phone: 560px;
