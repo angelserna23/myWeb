@@ -7,6 +7,15 @@
 
 let certFilter = "all";
 
+const GROUP_ORDER = CERT_GROUPS.map(([id]) => id);
+const SORTED_CERTS = [...CERTS].sort((a, b) => GROUP_ORDER.indexOf(a.group) - GROUP_ORDER.indexOf(b.group));
+
+function statusLabel(c) {
+  if (c.note) return tr(c.note);
+  if (c.status === "progress") return t("cert.progress");
+  return c.group === "course" ? t("cert.course") : t("cert.done");
+}
+
 function certCard(c) {
   const hidden = certFilter !== "all" && c.group !== certFilter;
   const thumb = c.img
@@ -16,7 +25,7 @@ function certCard(c) {
     ${thumb}
     <div class="cert__top">
       <span class="cert__year">${tr(c.date)}</span>
-      <span class="cert__status cert__status--${c.status}">${t(c.status === "done" ? "cert.done" : "cert.progress")}</span>
+      <span class="cert__status cert__status--${c.group === "course" && c.status === "done" ? "course" : c.status}">${statusLabel(c)}</span>
     </div>
     <h2>${tr(c.name)}</h2>
     <p class="cert__by">${tr(c.by)}${c.id ? ` · ID ${c.id}` : ""}</p>
@@ -42,7 +51,7 @@ function renderCerts() {
   );
 
   const grid = document.getElementById("certs");
-  grid.innerHTML = CERTS.map(certCard).join("");
+  grid.innerHTML = SORTED_CERTS.map(certCard).join("");
   grid.querySelectorAll(".cert__img").forEach((b) => b.addEventListener("click", () => openCertImage(b.dataset.src, b.dataset.alt)));
 }
 

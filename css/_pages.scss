@@ -810,6 +810,14 @@
       background: var(--lime);
       color: var(--ink);
     }
+    &--course {
+      background: rgba(14, 82, 54, 0.08);
+      color: var(--green-3);
+    }
+    &--partial {
+      background: #f3ead0;
+      color: #6b5512;
+    }
   }
 
   h2 {

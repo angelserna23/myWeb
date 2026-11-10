@@ -34,8 +34,8 @@ const UI = {
     "proj.ooe": "OOE = Overall Operation Efficiency: how much of the paid operator time goes into required work.",
     "edu.title": "Educa<span>tion</span>", "edu.sub": "Engineering in Mexico, a postgraduate year in France, and full-stack development to build my own tools.",
     "edu.langs": "Languages", "edu.skills": "What I took from it",
-    "cert.title": "Certifi<span>cations</span>", "cert.sub": "Formal training behind the work: Lean and quality, people leadership, and data tools. Green Belt is my next step.",
-    "cert.done": "Completed", "cert.progress": "In progress",
+    "cert.title": "Certifi<span>cations</span>", "cert.sub": "Formal training behind the work: Lean and quality, people leadership, data tools and internal courses. Click a certificate to see it. Green Belt is my next step.",
+    "cert.done": "Completed", "cert.progress": "In progress", "cert.course": "Course",
     "legal.updated": "Last updated: November 2026",
     "404": "Page not found"
   },
@@ -66,8 +66,8 @@ const UI = {
     "proj.ooe": "OOE = Overall Operation Efficiency: qué parte del tiempo pagado de los operadores se usa en trabajo requerido.",
     "edu.title": "Educa<span>ción</span>", "edu.sub": "Ingeniería en México, un año de posgrado en Francia y desarrollo full-stack para construir mis propias herramientas.",
     "edu.langs": "Idiomas", "edu.skills": "Lo que me llevé",
-    "cert.title": "Certifica<span>ciones</span>", "cert.sub": "La formación detrás del trabajo: Lean y calidad, liderazgo de personas y herramientas de datos. Green Belt es mi siguiente paso.",
-    "cert.done": "Completada", "cert.progress": "En curso",
+    "cert.title": "Certifica<span>ciones</span>", "cert.sub": "La formación detrás del trabajo: Lean y calidad, liderazgo de personas, herramientas de datos y cursos internos. Da clic en un certificado para verlo. Green Belt es mi siguiente paso.",
+    "cert.done": "Completada", "cert.progress": "En curso", "cert.course": "Curso",
     "legal.updated": "Última actualización: noviembre 2026",
     "404": "Página no encontrada"
   }
